@@ -10,7 +10,10 @@
 
 ### 0. Création et initialisation du projet Maven "question-score-project"
 
+<<<<<<< HEAD
 Créez un compte sur la plateforme Github si ce n'est pas déjà fait.  
+=======
+>>>>>>> Template project
 Vérifiez votre configuration Git locale. 
 Rappel pour configurer Git lors d’un premier usage sur une machine de travail :
 
@@ -31,6 +34,7 @@ Commitez et pushez  dans votre dépôt distant en utilisant le message de commit
 Dans la suite de ce document, à chaque fois que vous trouverez un énoncé commençant par “fix #...”, vous devez committer et pusher les modifications sur votre dépôt distant en utilisant comme message de commit cet énoncé.
 
 Les corrections des activités suivantes seront transmises au fil de l’eau ; elles seront disponibles dans les différentes branches du projet Github suivant : https://github.com/miage-toulouse/question-score-project 
+
 
 ### 1. Couverture du code par les tests de la classe QuestionAChoixExclusif (en mode Kata)
 
