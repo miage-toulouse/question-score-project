@@ -10,10 +10,7 @@
 
 ### 0. Création et initialisation du projet Maven "question-score-project"
 
-<<<<<<< HEAD
 Créez un compte sur la plateforme Github si ce n'est pas déjà fait.  
-=======
->>>>>>> Template project
 Vérifiez votre configuration Git locale. 
 Rappel pour configurer Git lors d’un premier usage sur une machine de travail :
 
