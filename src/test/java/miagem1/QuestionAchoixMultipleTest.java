@@ -17,7 +17,7 @@ public class QuestionAchoixMultipleTest {
 
     @Before
     public void setup() {
-        questionAchoixMultiple = new QuestionAChoixMultiple("q1",new ArrayList<Integer>(Arrays.asList(2,3,5)));
+        questionAchoixMultiple = new QuestionAChoixMultiple("q1",new ArrayList<Integer>(Arrays.asList(2,3,5)),5);
     }
 
     @Test
@@ -28,7 +28,7 @@ public class QuestionAchoixMultipleTest {
     @Test
     public void testGetScoreIndice() {
         assertEquals(33.33f, questionAchoixMultiple.getScoreForIndice(2),0.01f);
-        assertEquals(0f, questionAchoixMultiple.getScoreForIndice(1),0.001f);
+        assertEquals(-50f, questionAchoixMultiple.getScoreForIndice(1),0.001f);
     }
 
 }

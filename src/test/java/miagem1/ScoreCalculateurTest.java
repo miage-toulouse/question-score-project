@@ -19,7 +19,7 @@ public class ScoreCalculateurTest {
 
     @Before
     public void setUp() throws Exception {
-        questionAchoixMultiple = new QuestionAChoixMultiple("q1",new ArrayList<Integer>(Arrays.asList(2,3,5)));
+        questionAchoixMultiple = new QuestionAChoixMultiple("q1",new ArrayList<Integer>(Arrays.asList(2,3,5)),5);
         scoreCalculateur = new ScoreCalculateur();
     }
 
@@ -31,7 +31,7 @@ public class ScoreCalculateurTest {
         assertEquals(0f, scoreCalculateur.calculeScore(lf,questionAchoixMultiple),0.01f);
 
         // given : une liste de réponses à moitié correcte
-        List<Integer> ltf = new ArrayList<Integer>(Arrays.asList(1,2,3));
+        List<Integer> ltf = new ArrayList<Integer>(Arrays.asList(2,3));
         // expected : le score vaut 2/3 du max
         assertEquals(66.66f, scoreCalculateur.calculeScore(ltf,questionAchoixMultiple),0.01f);
 
