@@ -9,7 +9,6 @@ public class QuestionAChoixMultiple implements QuestionAChoix {
 
     private String enonce;
     private List<Integer> indicesBonnesReponses;
-    private int nombreChoix;
 
     /**
      * Une question à choix multiple est complètement caractérisé par son énoncé et la liste des indices qui forment
@@ -17,10 +16,9 @@ public class QuestionAChoixMultiple implements QuestionAChoix {
      * @param enonce l'énoncé de la question
      * @param indicesBonnesReponses la liste des indices formant la bonne réponse.
      */
-    public QuestionAChoixMultiple(String enonce, List<Integer> indicesBonnesReponses, int nombreChoix) {
+    public QuestionAChoixMultiple(String enonce, List<Integer> indicesBonnesReponses) {
         this.enonce = enonce;
         this.indicesBonnesReponses = indicesBonnesReponses;
-        this.nombreChoix = nombreChoix;
     }
 
     /**
@@ -37,14 +35,9 @@ public class QuestionAChoixMultiple implements QuestionAChoix {
      * @return 100/n si indiceChoix appartient à la liste des indices formant la bonne réponse, 0 sinon
      */
     public float getScoreForIndice(int indiceChoix) {
-        int nombreBonnesReponses = indicesBonnesReponses.size();
-        int nombreMauvaisesReponses = nombreChoix - nombreBonnesReponses;
-        float res = 0;
         if (indicesBonnesReponses.contains(indiceChoix)) {
-            res = 100f/((float)(nombreBonnesReponses));
-        } else {
-            res = -100f/((float)(nombreMauvaisesReponses));
+            return 100f/((float)(indicesBonnesReponses.size()));
         }
-        return res;
+        return 0;
     }
 }

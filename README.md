@@ -21,13 +21,14 @@ Rappel pour configurer Git lors d’un premier usage sur une machine de travail 
 
 
 Créez votre projet sur Github en vous inscrivant au devoir indiqué par votre enseignant.  
-Clonez dans l’espace de travail de votre choix le projet Github généré pour vous par Github Classroom.
-Dans votre projet local (résultat du clone), modifiez le fichier README pour qu’il contienne vos nom, prénom et groupe en place des données exemples.  
+Clonez dans l’espace de travail de votre choix le projet Github généré pour vous par Github Classroom.  
+Importez/ouvrez votre projet local dans l'IDE de votre choix supportant Maven (l'enseignant utilisera [IntelliJ](https://www.jetbrains.com/idea/download/)).  
+Modifiez le fichier README pour qu’il contienne vos nom, prénom et groupe en place des données exemples.  
 Commitez et pushez  dans votre dépôt distant en utilisant le message de commit suivant :
 
 > fix #0 Activité préliminaire terminée
 
-Dans la suite de ce document, à chaque fois que vous trouverez un énoncé commençant par “fix #...”, vous devez committer et de pusher les modifications sur votre dépôt distant en utilisant comme message de commit cet énoncé.
+Dans la suite de ce document, à chaque fois que vous trouverez un énoncé commençant par “fix #...”, vous devez committer et pusher les modifications sur votre dépôt distant en utilisant comme message de commit cet énoncé.
 
 Les corrections des activités suivantes seront transmises au fil de l’eau ; elles seront disponibles dans les différentes branches du projet Github suivant : https://github.com/miage-toulouse/question-score-project 
 
@@ -48,7 +49,6 @@ Les corrections des activités suivantes seront transmises au fil de l’eau ; e
 
 ### 3. Couverture du code par les tests de la classe ScoreCalculateur 
 
-- Créez une nouvelle branche intitulée "testsScoreCalculateur".
 - Créez la classe de test unitaire permettant de tester la classe *ScoreCalculateur*.
 - Écrivez les tests unitaires permettant de couvrir le code de la classe *ScoreCalculateur* à 100% en utilisant la contrainte et les cas de tests suivants :
     - pour chaque cas de test, l'instance de *ScoreCalculateur* utilisée est testée sur une question de type *QuestionAChoixMultiple* initialisée de la
