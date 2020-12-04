@@ -43,12 +43,15 @@ public class ScoreCalculateurTest {
     }
 
     @Test
-    public void testCalculeScoreAvecToutesLesResponses() throws Exception {
+    public void testCalculeScoreAvecReponsesFaussesEtJustes() throws Exception {
         // given : une liste contenant des réponses justes et fausses
         List<Integer> ltf = new ArrayList<Integer>(Arrays.asList(1,2,3));
         // expected : le score vaut 1/6 du max
         assertEquals(16.66f, scoreCalculateur.calculeScore(ltf,questionAchoixMultiple),0.01f);
+    }
 
+    @Test
+    public void testCalculeScoreAvecToutesLesResponsesSelectionnees() throws Exception {
         // given : une liste contenant toutes les réponses
         List<Integer> all = new ArrayList<Integer>(Arrays.asList(1,2,3,4,5));
         // expected : le score vaut zéro
